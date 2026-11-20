@@ -279,8 +279,9 @@ def write_features_md(path, frame, kept, dropped, source_of, median) -> None:
     if DICTIONARY.exists():
         dic = pd.read_csv(DICTIONARY).set_index("column")
         for column in RAW_NUMERIC:
-            if column in dic.index:
-                raw_info[column] = f"{dic.loc[column, 'indicator']}, {dic.loc[column, 'unit']}"
+            if column in dic.index and pd.notna(dic.loc[column, "indicator"]):
+                text = " ".join(str(dic.loc[column, "indicator"]).split())
+                raw_info[column] = f"{text}, {dic.loc[column, 'unit']}".replace(" ,", ",")
     median_text = f"{median:,.0f}".replace(",", " ")
     lines = [
         "# FEATURES: витрина признаков (data/processed/features.parquet)",

@@ -27,14 +27,14 @@
 | temp_delta | float32 | дата (динамика) | изменение температуры за 1970-2010 (cl_b01_cur_2010 минус cl_b01_cur_1970) | да |
 | precip_2010 | float32 | дата (динамика) | среднегодовые осадки, мм/год, 2010 (cl_b12_cur_2010) | да |
 | precip_delta | float32 | дата (динамика) | изменение осадков за 1970-2010 (cl_b12_cur_2010 минус cl_b12_cur_1970) | да |
-| ex_010_bus_2025 | float32 | исходные числовые | исходный столбец ex_010_bus_2025: Total Built-up Exposed to floods , m2 | да |
-| ex_010_nre_2025 | float32 | исходные числовые | исходный столбец ex_010_nre_2025: nan, m2 | да |
+| ex_010_bus_2025 | float32 | исходные числовые | исходный столбец ex_010_bus_2025: Total Built-up Exposed to floods, m2 | да |
+| ex_010_nre_2025 | float32 | исходные числовые | исходный столбец ex_010_nre_2025 | да |
 | gc_uca_km2_2025 | float32 | исходные числовые | исходный столбец gc_uca_km2_2025: Urban Centre Area, km2 | да |
 | ge_bio_a24_2025 | float32 | исходные числовые | исходный столбец ge_bio_a24_2025: Share of UC area in Biome class24, % | да |
 | ge_elv_avg_2025 | float32 | исходные числовые | исходный столбец ge_elv_avg_2025: Average Elevation, m | да |
-| gh_age_s05_2025 | float32 | исходные числовые | исходный столбец gh_age_s05_2025: Share of 2025  BU surface in temporal dominant 1995-2005, % | да |
-| gh_age_s15_2025 | float32 | исходные числовые | исходный столбец gh_age_s15_2025: Share of 2025  BU surface in temporal dominant 2005-2015, % | да |
-| gr_avg_grn_2025 | float32 | исходные числовые | исходный столбец gr_avg_grn_2025: Mean greenness  in the built-up area, dimensionless | да |
+| gh_age_s05_2025 | float32 | исходные числовые | исходный столбец gh_age_s05_2025: Share of 2025 BU surface in temporal dominant 1995-2005, % | да |
+| gh_age_s15_2025 | float32 | исходные числовые | исходный столбец gh_age_s15_2025: Share of 2025 BU surface in temporal dominant 2005-2015, % | да |
+| gr_avg_grn_2025 | float32 | исходные числовые | исходный столбец gr_avg_grn_2025: Mean greenness in the built-up area, dimensionless | да |
 | gr_shb_grn_2025 | float32 | исходные числовые | исходный столбец gr_shb_grn_2025: Share of green area in built-up area, % | да |
 | country_n | int32 | агрегаты по группе | число городов страны в наборе | да |
 | area_country_median | float32 | агрегаты по группе | медиана площади (gc_uca_km2_2025) по стране | да |
